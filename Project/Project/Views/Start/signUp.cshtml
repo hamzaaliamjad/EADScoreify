@@ -1,0 +1,105 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div id="back">
+        <canvas id="canvas" class="canvas-back"></canvas>
+        <div class="backRight">
+        </div>
+        <div class="backLeft">
+        </div>
+    </div>
+
+    <div id="slideBox">
+        <div class="topLayer">
+            <div class="left">
+                <div class="content">
+                    <h2>Sign Up</h2>
+                    <form id="form-signup" method="post" onsubmit="return false;">
+
+                        <div class="form-element form-stack">
+                            <label for="username-signup" class="form-label">Username</label>
+                            <input id="username-signup" type="text" name="username">
+                        </div>
+
+                        <div class="form-element form-stack">
+                            <label for="password-signup" class="form-label">Password</label>
+                            <input id="password-signup" type="password" name="password">
+                        </div>
+
+
+                        <div class="form-element form-stack">
+                            <label for="Cpassword-signup" class="form-label">Confirm Password</label>
+                            <input id="Cpassword-signup" type="password" name="Cpassword">
+                        </div>
+
+
+                        <div class="form-element form-stack">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" type="email" name="email">
+                        </div>
+
+
+
+                        <div class="form-element form-stack">
+                            <label for="phnNo" class="form-label">Phone No.</label>
+                            <input id="phnNo" type="tel" name="phnNo">
+                        </div>
+
+                        <div class="form-element form-submit">
+                            <button id="signUp" class="signup" type="submit" name="signup" onclick="window.location='feedPage.html';">Sign up</button>
+                            <button id="goLeft" class="signup off">Log In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="right">
+                <div class="content">
+                    <h2>Login</h2>
+                    <form id="form-login" method="post" onsubmit="return false;">
+                        <div class="form-element form-stack">
+                            <label for="username-login" class="form-label">Username</label>
+                            <input id="username-login" type="text" name="username">
+                        </div>
+                        <div class="form-element form-stack">
+                            <label for="password-login" class="form-label">Password</label>
+                            <input id="password-login" type="password" name="password">
+                        </div>
+                        <div class="form-element form-submit">
+                            <button id="logIn" class="login" type="submit" name="login" onclick="window.location='feedPage.html';">Log In</button>
+                            <button id="goRight" class="login off" name="signup">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+
+
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
+    <script src="~/js/login.js"></script>
+
+</body>
+</html>

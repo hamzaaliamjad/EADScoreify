@@ -1,0 +1,124 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="~/css/edit.css" rel="stylesheet">
+
+<head>
+    <title>Edit Profile Page</title>
+    <style>
+        body {
+            background-image: url("/images/background.jpg");
+        }
+    </style>
+    <div class="nav-bar">
+
+        <div class="app-name">
+            <p>Scoreify</p>
+        </div>
+
+        <div class="right-side">
+            <button type="submit" id="home">Home</button>
+            <button type="submit" id="logout">LogOut</button>
+        </div>
+
+    </div>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="sidebar-descrip">
+                <h1>Profile</h1>
+                <hr>
+            </div>
+
+            <div class="options">
+                <form>
+
+                    <img class="profile" src="~/images/photo.jpeg" />
+                    <br><br>
+                    <span class="name-edit">Hamza Ali Amjad</span>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="white-container">
+
+            <div class="description">
+                <div class="left-descrip">
+                    <h1>Edit Info</h1>
+                    <h2>Manage and protect your account</h2>
+                </div>
+
+            </div>
+
+            <div class="hr">
+                <hr>
+            </div>
+
+            <div class="info-container">
+
+                <div class="left-info">
+                    <div class="labels">
+                        <p>Username</p>
+                        <p>Email</p>
+                        <p>Password</p>
+                        <p>Gender</p>
+                    </div>
+
+                    <div class="infos">
+                        <form>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="right-info">
+                    <div class="labels">
+
+
+                        <p>Phone No.</p>
+                        <p>Favorite Sport</p>
+                        <p>Upload Pic</p>
+
+                    </div>
+
+                    <div class="infos">
+                        <form>
+
+                            <input type="tel" name="phone" pattern="+92[0-9]{10}" value="+92">
+                            <input type="text">
+                            <input type="file">
+
+                            <br><br><br>
+                            <button type="submit" class="confirm">CONFIRM</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/profile.css">
+
+    <div class="nav-bar">
+        <nav class="navbar navbar-custom navbar-expand sticky-top ">
+            <div class="container-fluid">
+                <div class="app-name">
+                    <p>Scoreify</p>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+                <ul class="navbar-nav me-10 mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href='/home'>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Logout</a>
+                    </li>
+                    <li class="nav-item imageProfile">
+                        <div class="col-xs-1">
+                            <img class="img-responsive img-border rounded-circle" src="~/images/photo.jpeg"
+                                 alt="Profile Picture" width="42" height="42">
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <style>
+        .intro {
+            background-image: url("/images/15230.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card profile">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="~/images/photo.jpeg" class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>Hamza Ali Amjad</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card intro mt-3" style="width: 22rem;">
+                        <div class="card-body">
+                            <p>+92 456584589</p>
+                            <p>hamza_gdha@gmail.com</p>
+                            <p>Favorite Sport: Kabadi</p>
+                            <p>Won Medals in: Wrestling</p>
+                            <p>Coordinator of Badminton</p>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btnEdit" href="/editInfo">Edit Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3 matches">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <p class="mb-0 schedule">Schedule of Matches</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col s7">
+                                    <p class="collections-title"><strong>#102</strong> Chess</p>
+                                </div>
+                                <div class="col s2">
+                                    <p class="day">on Tuesday at 04:00pm</p>
+                                </div>
+                                <div class="col s3">
+                                    <div class="venue">
+                                        <p>Building A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col s7">
+                                    <p class="collections-title"><strong>#188</strong> Cricket</p>
+                                </div>
+                                <div class="col s2">
+                                    <p class="day">on Monday at 03:00pm</p>
+                                </div>
+                                <div class="col s3">
+                                    <div class="venue">
+                                        <p>VC Lawn</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col s7">
+                                    <p class="collections-title"><strong>#108</strong> Badminton</p>
+                                </div>
+                                <div class="col s2">
+                                    <p class="day">on Wednesday at 01:00pm</p>
+                                </div>
+                                <div class="col s3">
+                                    <div class="venue">
+                                        <p>Badminton Court</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col s7">
+                                    <p class="collections-title"><strong>#205</strong> Ludo</p>
+                                </div>
+                                <div class="col s2">
+                                    <p class="day">on Friday at 09:00am</p>
+                                </div>
+                                <div class="col s3">
+                                    <div class="venue">
+                                        <p>Building B</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  cardTeam mb-3">
+                        <div class="card participate h-100">
+                            <div class="card-body">
+                                <p class="member d-flex align-items-center mb-3">Member of</p>
+                                <div class="row">
+                                    <div class="col s5">
+                                        <p>Team: CSnaiks</p>
+                                    </div>
+                                    <div class="col s5">
+                                        <p>Team: HexClan</p>
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <p class="coordinator d-flex align-items-center mb-3">Coordinator of</p>
+                                <div class="row">
+                                    <div class="col s5">
+                                        <p>Badminton</p>
+                                    </div>
+                                    <div class="col s5">
+                                        <p>Cricket</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 mb-3">
+                            <div class="medals card h-100">
+                                <div class="card-deck">
+                                    <div class="card medalCard">
+                                        <img class="card-img-top" src="/images/photo.jpeg" alt="Card image cap" style="border-radius: 35px;">
+                                        <div class="card-body">
+                                            <p class="card-title medal-name">Hamza Ali Amjad</p>
+                                            <p class="card-text team-name">Team: CSnaiks</p>
+                                            <div class="card-footer">
+                                                <small class="text-muted">Gold Medal in Cricket</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+</body>
+</html>
